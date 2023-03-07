@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculatrice</title>
 </head>
+
 <body>
+
+    <section id="calculatrice">
+        <div id="screen">
+            <p id="calcule"></p>
+            <p id="result"></p>
+        </div>
+        <div id="keyboard">
+            <button id="reset" onclick="reset()">C</button>
+        
+            <!-- opérateur -->
+            <button onclick="operator('/')">/</button>
+            <button onclick="operator('+')">+</button>
+            <button onclick="operator('-')">-</button>
+            <button onclick="operator('*')">*</button>
+            <!-- virgule -->
+            <button onclick="chiffre('.')">.</button>
+            <!-- effacer -->
+            <!-- nombres -->
+            <button onclick="chiffre('0')">0</button>
+            <button onclick="chiffre('1')">1</button>
+            <button onclick="chiffre('2')">2</button>
+            <button onclick="chiffre('3')">3</button>
+            <button onclick="chiffre('4')">4</button>
+            <button onclick="chiffre('5')">5</button>
+            <button onclick="chiffre('6')">6</button>
+            <button onclick="chiffre('7')">7</button>
+            <button onclick="chiffre('8')">8</button>
+            <button onclick="chiffre('9')">9</button>
+            <!-- égale -->
+            <button class="egale" onclick="calcul()">=</button>
+        </div>
+    </section>
+
     <script src="./app.js"></script>
 </body>
+
 </html>
